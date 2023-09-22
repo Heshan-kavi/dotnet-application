@@ -1,0 +1,15 @@
+/Users/heshankavinda/Git Repos/dotnet Repos/Helloworld/Helloworld/bin/Debug/net7.0/Helloworld
+/Users/heshankavinda/Git Repos/dotnet Repos/Helloworld/Helloworld/bin/Debug/net7.0/Helloworld.deps.json
+/Users/heshankavinda/Git Repos/dotnet Repos/Helloworld/Helloworld/bin/Debug/net7.0/Helloworld.runtimeconfig.json
+/Users/heshankavinda/Git Repos/dotnet Repos/Helloworld/Helloworld/bin/Debug/net7.0/Helloworld.dll
+/Users/heshankavinda/Git Repos/dotnet Repos/Helloworld/Helloworld/bin/Debug/net7.0/Helloworld.pdb
+/Users/heshankavinda/Git Repos/dotnet Repos/Helloworld/Helloworld/obj/Debug/net7.0/Helloworld.csproj.AssemblyReference.cache
+/Users/heshankavinda/Git Repos/dotnet Repos/Helloworld/Helloworld/obj/Debug/net7.0/Helloworld.GeneratedMSBuildEditorConfig.editorconfig
+/Users/heshankavinda/Git Repos/dotnet Repos/Helloworld/Helloworld/obj/Debug/net7.0/Helloworld.AssemblyInfoInputs.cache
+/Users/heshankavinda/Git Repos/dotnet Repos/Helloworld/Helloworld/obj/Debug/net7.0/Helloworld.AssemblyInfo.cs
+/Users/heshankavinda/Git Repos/dotnet Repos/Helloworld/Helloworld/obj/Debug/net7.0/Helloworld.csproj.CoreCompileInputs.cache
+/Users/heshankavinda/Git Repos/dotnet Repos/Helloworld/Helloworld/obj/Debug/net7.0/Helloworld.dll
+/Users/heshankavinda/Git Repos/dotnet Repos/Helloworld/Helloworld/obj/Debug/net7.0/refint/Helloworld.dll
+/Users/heshankavinda/Git Repos/dotnet Repos/Helloworld/Helloworld/obj/Debug/net7.0/Helloworld.pdb
+/Users/heshankavinda/Git Repos/dotnet Repos/Helloworld/Helloworld/obj/Debug/net7.0/Helloworld.genruntimeconfig.cache
+/Users/heshankavinda/Git Repos/dotnet Repos/Helloworld/Helloworld/obj/Debug/net7.0/ref/Helloworld.dll
