@@ -2,8 +2,8 @@
 {
     public class Person
     {
-        public string FirstName;
-        public string Secondname;
+        public string FirstName = "";
+        public string Secondname = "";
 
         public string Introduce()
         {
