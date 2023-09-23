@@ -14,6 +14,27 @@ namespace Variables
             Console.WriteLine(number);
             Console.WriteLine(totalPrice);
             Console.WriteLine(isWorking);
+
+            //check type conversions
+            //explicit conversion
+            int testingvalue = 260;
+            byte testingValueTwo = (byte) testingvalue;
+            Console.WriteLine("this is the value in int type :  {0}", testingvalue);
+            Console.WriteLine("this is the value in byte type :  {0}", testingValueTwo);
+
+            //implicit conversion
+            int testingValueThree = 260;
+            float testingValueFour = testingValueThree;
+            Console.WriteLine("this is the value in int type :  {0}", testingValueThree);
+            Console.WriteLine("this is the value in float type :  {0}", testingValueFour);
+
+            //non-compatible conversion
+            string testingValueFive = "12";
+            float testingValueSix = Convert.ToInt16(testingValueFive);
+            float testingValueSeven = int.Parse(testingValueFive);
+            Console.WriteLine("this is the value in string type :  {0}", testingValueSix);
+            Console.WriteLine("this is the value in int type with convert function :  {0}", testingValueSix);
+            Console.WriteLine("this is the value in int type with parse function :  {0}", testingValueSeven);
         }
     }
 }
