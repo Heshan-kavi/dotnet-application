@@ -69,6 +69,8 @@ namespace Variables
             Person person = new Person();
             person.FirstName = "Heshan";
             person.Secondname = "Kavinda";
+            person.age = 23;
+            person.address = "Meegoda";
             var fullName = person.Introduce();
             Console.WriteLine("this is the full name : " + fullName);
 
