@@ -49,6 +49,15 @@ namespace Variables
             {
                 Console.WriteLine("there is a type conversion issue with the values !!!");
             }
+
+
+            //operators
+            //arithmetic operators
+            var testingValueNine = 12;
+            var testingValueTen = 23;
+
+            Console.WriteLine((float)testingValueNine + (float)testingValueTen);
+            Console.WriteLine(testingValueTen > testingValueNine);
         }
     }
 }
