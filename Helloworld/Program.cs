@@ -58,6 +58,7 @@ namespace Variables
 
             Console.WriteLine((float)testingValueNine + (float)testingValueTen);
             Console.WriteLine(testingValueTen > testingValueNine);
+            Console.WriteLine(!(testingValueTen > testingValueNine));
         }
     }
 }
