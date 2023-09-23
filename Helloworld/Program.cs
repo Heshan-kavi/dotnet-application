@@ -1,4 +1,5 @@
 ﻿using System;
+using Helloworld.Math;
 
 namespace Variables
 {
@@ -70,6 +71,10 @@ namespace Variables
             person.Secondname = "Kavinda";
             var fullName = person.Introduce();
             Console.WriteLine("this is the full name : " + fullName);
+
+            //testing a class which is located in a different field
+            Calculator calculator = new Calculator();
+            Console.WriteLine("This is the resulf from the cal : " + calculator.AddNumbers(12, 23));
         }
     }
 }
