@@ -2,17 +2,6 @@
 
 namespace Variables
 {
-    public class Person
-    {
-        public string FirstName;
-        public string Secondname;
-
-        public string Introduce()
-        {
-            Console.WriteLine("Hello, my name is : " + FirstName + " " + Secondname);
-            return FirstName + " " + Secondname;
-        }
-    }
 
     class Program
     {
