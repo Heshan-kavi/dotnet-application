@@ -35,6 +35,30 @@ namespace Variables
             Console.WriteLine("this is the value in string type :  {0}", testingValueSix);
             Console.WriteLine("this is the value in int type with convert function :  {0}", testingValueSix);
             Console.WriteLine("this is the value in int type with parse function :  {0}", testingValueSeven);
+
+
+            //using try and catch
+            try
+            {
+                var stingValueEight = "1234";
+                byte b = Convert.ToByte(stingValueEight);
+                Console.WriteLine(b);
+
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("there is a type conversion issue with the values !!!");
+            }
+
+
+            //operators
+            //arithmetic operators
+            var testingValueNine = 12;
+            var testingValueTen = 23;
+
+            Console.WriteLine((float)testingValueNine + (float)testingValueTen);
+            Console.WriteLine(testingValueTen > testingValueNine);
+            Console.WriteLine(!(testingValueTen > testingValueNine));
         }
     }
 }
