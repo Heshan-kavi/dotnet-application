@@ -2,6 +2,18 @@
 
 namespace Variables
 {
+    public class Person
+    {
+        public string FirstName;
+        public string Secondname;
+
+        public string Introduce()
+        {
+            Console.WriteLine("Hello, my name is : " + FirstName + " " + Secondname);
+            return FirstName + " " + Secondname;
+        }
+    }
+
     class Program
     {
         static void Main(string[] args)
@@ -59,6 +71,16 @@ namespace Variables
             Console.WriteLine((float)testingValueNine + (float)testingValueTen);
             Console.WriteLine(testingValueTen > testingValueNine);
             Console.WriteLine(!(testingValueTen > testingValueNine));
+
+
+
+
+            //Checking non-primitve types in the C#
+            Person person = new Person();
+            person.FirstName = "Heshan";
+            person.Secondname = "Kavinda";
+            var fullName = person.Introduce();
+            Console.WriteLine("this is the full name : " + fullName);
         }
     }
 }
