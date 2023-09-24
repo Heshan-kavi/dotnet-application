@@ -1,18 +1,8 @@
 ﻿using System;
+using Helloworld.Math;
 
 namespace Variables
 {
-    public class Person
-    {
-        public string FirstName;
-        public string Secondname;
-
-        public string Introduce()
-        {
-            Console.WriteLine("Hello, my name is : " + FirstName + " " + Secondname);
-            return FirstName + " " + Secondname;
-        }
-    }
 
     class Program
     {
@@ -79,8 +69,14 @@ namespace Variables
             Person person = new Person();
             person.FirstName = "Heshan";
             person.Secondname = "Kavinda";
+            person.age = 23;
+            person.address = "Meegoda";
             var fullName = person.Introduce();
             Console.WriteLine("this is the full name : " + fullName);
+
+            //testing a class which is located in a different field
+            Calculator calculator = new Calculator();
+            Console.WriteLine("This is the resulf from the cal : " + calculator.AddNumbers(12, 23));
         }
     }
 }
