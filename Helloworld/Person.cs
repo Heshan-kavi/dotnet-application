@@ -7,7 +7,7 @@
         public int age = 0;
         public string address = "";
 
-        //implemented struct to store the data regarding the age and the address
+        //implemented struct to store the data regarding the age and the address 
         public struct PersonalDetails
         {
             public int age;

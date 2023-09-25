@@ -77,6 +77,27 @@ namespace Variables
             //testing a class which is located in a different field
             Calculator calculator = new Calculator();
             Console.WriteLine("This is the resulf from the cal : " + calculator.AddNumbers(12, 23));
+
+
+
+            //testing array
+            var numberArray = new int[3];
+            numberArray[0] = 1;
+
+            Console.WriteLine(numberArray[0]);
+            Console.WriteLine(numberArray[1]);
+            Console.WriteLine(numberArray[2]);
+
+            var booleanArray = new bool[3];
+            booleanArray[0] = true;
+
+            Console.WriteLine(booleanArray[0]);
+            Console.WriteLine(booleanArray[1]);
+            Console.WriteLine(booleanArray[2]);
+
+            var stringArray = new string[3] { "hens", "kavi", "nimal" };
+
+            Console.WriteLine(stringArray.Length);
         }
     }
 }
