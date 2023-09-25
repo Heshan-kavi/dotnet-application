@@ -12,31 +12,31 @@ namespace Variables
             float totalPrice = 23.22f;
             bool isWorking = true;
 
-            Console.WriteLine("{0} {1}", byte.MinValue, byte.MaxValue);
-            Console.WriteLine(number);
-            Console.WriteLine(totalPrice);
-            Console.WriteLine(isWorking);
+            //Console.WriteLine("{0} {1}", byte.MinValue, byte.MaxValue);
+            //Console.WriteLine(number);
+            //Console.WriteLine(totalPrice);
+            //Console.WriteLine(isWorking);
 
             //check type conversions
             //explicit conversion
             int testingvalue = 260;
             byte testingValueTwo = (byte) testingvalue;
-            Console.WriteLine("this is the value in int type :  {0}", testingvalue);
-            Console.WriteLine("this is the value in byte type :  {0}", testingValueTwo);
+            //Console.WriteLine("this is the value in int type :  {0}", testingvalue);
+            //Console.WriteLine("this is the value in byte type :  {0}", testingValueTwo);
 
             //implicit conversion
             int testingValueThree = 260;
             float testingValueFour = testingValueThree;
-            Console.WriteLine("this is the value in int type :  {0}", testingValueThree);
-            Console.WriteLine("this is the value in float type :  {0}", testingValueFour);
+            //Console.WriteLine("this is the value in int type :  {0}", testingValueThree);
+            //Console.WriteLine("this is the value in float type :  {0}", testingValueFour);
 
             //non-compatible conversion
             string testingValueFive = "12";
             float testingValueSix = Convert.ToInt16(testingValueFive);
             float testingValueSeven = int.Parse(testingValueFive);
-            Console.WriteLine("this is the value in string type :  {0}", testingValueSix);
-            Console.WriteLine("this is the value in int type with convert function :  {0}", testingValueSix);
-            Console.WriteLine("this is the value in int type with parse function :  {0}", testingValueSeven);
+            //Console.WriteLine("this is the value in string type :  {0}", testingValueSix);
+            //Console.WriteLine("this is the value in int type with convert function :  {0}", testingValueSix);
+            //Console.WriteLine("this is the value in int type with parse function :  {0}", testingValueSeven);
 
 
             //using try and catch
@@ -44,12 +44,12 @@ namespace Variables
             {
                 var stingValueEight = "1234";
                 byte b = Convert.ToByte(stingValueEight);
-                Console.WriteLine(b);
+                //Console.WriteLine(b);
 
             }
             catch (Exception)
             {
-                Console.WriteLine("there is a type conversion issue with the values !!!");
+                //Console.WriteLine("there is a type conversion issue with the values !!!");
             }
 
 
@@ -58,9 +58,9 @@ namespace Variables
             var testingValueNine = 12;
             var testingValueTen = 23;
 
-            Console.WriteLine((float)testingValueNine + (float)testingValueTen);
-            Console.WriteLine(testingValueTen > testingValueNine);
-            Console.WriteLine(!(testingValueTen > testingValueNine));
+            //Console.WriteLine((float)testingValueNine + (float)testingValueTen);
+            //Console.WriteLine(testingValueTen > testingValueNine);
+            //Console.WriteLine(!(testingValueTen > testingValueNine));
 
 
 
@@ -72,11 +72,11 @@ namespace Variables
             person.age = 23;
             person.address = "Meegoda";
             var fullName = person.Introduce();
-            Console.WriteLine("this is the full name : " + fullName);
+            //Console.WriteLine("this is the full name : " + fullName);
 
             //testing a class which is located in a different field
             Calculator calculator = new Calculator();
-            Console.WriteLine("This is the resulf from the cal : " + calculator.AddNumbers(12, 23));
+            //Console.WriteLine("This is the resulf from the cal : " + calculator.AddNumbers(12, 23));
 
 
 
@@ -84,20 +84,45 @@ namespace Variables
             var numberArray = new int[3];
             numberArray[0] = 1;
 
-            Console.WriteLine(numberArray[0]);
-            Console.WriteLine(numberArray[1]);
-            Console.WriteLine(numberArray[2]);
+            //Console.WriteLine(numberArray[0]);
+            //Console.WriteLine(numberArray[1]);
+            //Console.WriteLine(numberArray[2]);
 
             var booleanArray = new bool[3];
             booleanArray[0] = true;
 
-            Console.WriteLine(booleanArray[0]);
-            Console.WriteLine(booleanArray[1]);
-            Console.WriteLine(booleanArray[2]);
+            //Console.WriteLine(booleanArray[0]);
+            //Console.WriteLine(booleanArray[1]);
+            //Console.WriteLine(booleanArray[2]);
 
             var stringArray = new string[3] { "hens", "kavi", "nimal" };
 
-            Console.WriteLine(stringArray.Length);
+            //Console.WriteLine(stringArray.Length);
+
+
+
+            //strings and related things
+            var nameOne = "Heshan";
+            var nameTwo = "Kavinda";
+            var names = new string[2] { "Heshan", "Kavinda" };
+
+            var contatinatedStringOne = nameOne + " " + nameTwo;                                            //usual contatination
+            var contatinatedStringTwo = string.Format("{0} {1}", nameOne, nameTwo);                         //using format in string class for contatination
+            var contatinatedStringThree = string.Join(" ", names);                                          //using join in string class for contatination with a sparator
+            var textString = "hi John\nLook into the following path \nc:\\folder\\folders\\hello";          //usual string
+            var textStringTwo = @"hi John
+Look into the following path
+c:\folder\folders\hello";                                                                                   //verbatim string
+
+
+            Console.WriteLine("This is the contatinated string one : " + contatinatedStringOne);
+            Console.WriteLine("This is the contatinated string two : " + contatinatedStringTwo);
+            Console.WriteLine("This is the contatinated string three : " + contatinatedStringThree);
+            Console.WriteLine("This is the second character in the contatinatestringone : " + contatinatedStringOne[1]);
+            Console.WriteLine("This is the usual string with different string escape operators :");
+            Console.WriteLine(textString);
+            Console.WriteLine("This is the verbitam string without different string escape operators :");
+            Console.WriteLine(textStringTwo);
         }
     }
 }
