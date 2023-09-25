@@ -98,6 +98,22 @@ namespace Variables
             var stringArray = new string[3] { "hens", "kavi", "nimal" };
 
             //Console.WriteLine(stringArray.Length);
+
+
+
+            //strings and related things
+            var nameOne = "Heshan";
+            var nameTwo = "Kavinda";
+            var names = new string[2] { "Heshan", "Kavinda" };
+
+            var contatinatedStringOne = nameOne + " " + nameTwo;                            //usual contatination
+            var contatinatedStringTwo = string.Format("{0} {1}", nameOne, nameTwo);         //using format in string for contatination
+            var contatinatedStringThree = string.Join(" ", names);                          //using join in string for contatination with a sparator
+
+            Console.WriteLine("This is the contatinated string one : " + contatinatedStringOne);
+            Console.WriteLine("This is the contatinated string two : " + contatinatedStringTwo);
+            Console.WriteLine("This is the contatinated string three : " + contatinatedStringThree);
+            Console.WriteLine("This is the second character in the contatinatestringone : " + contatinatedStringOne[1]);
         }
     }
 }
