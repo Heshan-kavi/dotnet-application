@@ -138,10 +138,23 @@ c:\folder\folders\hello";                                                       
             var method = TestingEnum.Express;
             var methodValue = 3;
             var methodKey = "Express";
-            Console.WriteLine("printing the express value as a int value : " + (int)method);
-            Console.WriteLine("printing the express value as a string value : " + method.ToString());
-            Console.WriteLine("printing the express key when we have the value : " + (TestingEnum)methodValue);
-            Console.WriteLine("printing the express value when we have the key : " + Enum.Parse(typeof(TestingEnum), methodKey));
+            //Console.WriteLine("printing the express value as a int value : " + (int)method);
+            //Console.WriteLine("printing the express value as a string value : " + method.ToString());
+            //Console.WriteLine("printing the express key when we have the value : " + (TestingEnum)methodValue);
+            //Console.WriteLine("printing the express value when we have the key : " + Enum.Parse(typeof(TestingEnum), methodKey));
+
+
+
+            //types
+            var numberOne = 12;
+            var numberTwo = numberOne;
+            numberTwo++;
+            Console.WriteLine("This is the number one : {0} and this is number two : {1}", numberOne, numberTwo);           //value type
+
+            var arrayOne = new int[3]{ 1, 2, 3};
+            var arrayTwo = arrayOne;
+            arrayTwo[0] = 55;
+            Console.WriteLine("This is the number one : {0} and this is number two : {1}", arrayOne[0], arrayTwo[0]);       //reference type
         }
     }
 }
