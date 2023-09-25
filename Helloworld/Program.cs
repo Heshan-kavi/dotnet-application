@@ -106,14 +106,23 @@ namespace Variables
             var nameTwo = "Kavinda";
             var names = new string[2] { "Heshan", "Kavinda" };
 
-            var contatinatedStringOne = nameOne + " " + nameTwo;                            //usual contatination
-            var contatinatedStringTwo = string.Format("{0} {1}", nameOne, nameTwo);         //using format in string for contatination
-            var contatinatedStringThree = string.Join(" ", names);                          //using join in string for contatination with a sparator
+            var contatinatedStringOne = nameOne + " " + nameTwo;                                            //usual contatination
+            var contatinatedStringTwo = string.Format("{0} {1}", nameOne, nameTwo);                         //using format in string class for contatination
+            var contatinatedStringThree = string.Join(" ", names);                                          //using join in string class for contatination with a sparator
+            var textString = "hi John\nLook into the following path \nc:\\folder\\folders\\hello";          //usual string
+            var textStringTwo = @"hi John
+Look into the following path
+c:\folder\folders\hello";                                                                                   //verbatim string
+
 
             Console.WriteLine("This is the contatinated string one : " + contatinatedStringOne);
             Console.WriteLine("This is the contatinated string two : " + contatinatedStringTwo);
             Console.WriteLine("This is the contatinated string three : " + contatinatedStringThree);
             Console.WriteLine("This is the second character in the contatinatestringone : " + contatinatedStringOne[1]);
+            Console.WriteLine("This is the usual string with different string escape operators :");
+            Console.WriteLine(textString);
+            Console.WriteLine("This is the verbitam string without different string escape operators :");
+            Console.WriteLine(textStringTwo);
         }
     }
 }
