@@ -4,6 +4,13 @@ using Helloworld.Math;
 namespace Variables
 {
 
+    public enum TestingEnum
+    {
+        RegularAirMail = 1,
+        RegiseredAirMail = 2,
+        Express = 3
+    }
+
     class Program
     {
         static void Main(string[] args)
@@ -115,14 +122,39 @@ Look into the following path
 c:\folder\folders\hello";                                                                                   //verbatim string
 
 
-            Console.WriteLine("This is the contatinated string one : " + contatinatedStringOne);
-            Console.WriteLine("This is the contatinated string two : " + contatinatedStringTwo);
-            Console.WriteLine("This is the contatinated string three : " + contatinatedStringThree);
-            Console.WriteLine("This is the second character in the contatinatestringone : " + contatinatedStringOne[1]);
-            Console.WriteLine("This is the usual string with different string escape operators :");
-            Console.WriteLine(textString);
-            Console.WriteLine("This is the verbitam string without different string escape operators :");
-            Console.WriteLine(textStringTwo);
+            //Console.WriteLine("This is the contatinated string one : " + contatinatedStringOne);
+            //Console.WriteLine("This is the contatinated string two : " + contatinatedStringTwo);
+            //Console.WriteLine("This is the contatinated string three : " + contatinatedStringThree);
+            //Console.WriteLine("This is the second character in the contatinatestringone : " + contatinatedStringOne[1]);
+            //Console.WriteLine("This is the usual string with different string escape operators :");
+            //Console.WriteLine(textString);
+            //Console.WriteLine("This is the verbitam string without different string escape operators :");
+            //Console.WriteLine(textStringTwo);
+
+
+
+
+            //Enum related things
+            var method = TestingEnum.Express;
+            var methodValue = 3;
+            var methodKey = "Express";
+            //Console.WriteLine("printing the express value as a int value : " + (int)method);
+            //Console.WriteLine("printing the express value as a string value : " + method.ToString());
+            //Console.WriteLine("printing the express key when we have the value : " + (TestingEnum)methodValue);
+            //Console.WriteLine("printing the express value when we have the key : " + Enum.Parse(typeof(TestingEnum), methodKey));
+
+
+
+            //types
+            var numberOne = 12;
+            var numberTwo = numberOne;
+            numberTwo++;
+            Console.WriteLine("This is the number one : {0} and this is number two : {1}", numberOne, numberTwo);           //value type
+
+            var arrayOne = new int[3]{ 1, 2, 3};
+            var arrayTwo = arrayOne;
+            arrayTwo[0] = 55;
+            Console.WriteLine("This is the number one : {0} and this is number two : {1}", arrayOne[0], arrayTwo[0]);       //reference type
         }
     }
 }
