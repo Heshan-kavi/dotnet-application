@@ -15,9 +15,9 @@ namespace Variables
     {
         static void Main(string[] args)
         {
-            byte number = 23;
-            float totalPrice = 23.22f;
-            bool isWorking = true;
+            //byte number = 23;
+            //float totalPrice = 23.22f;
+            //bool isWorking = true;
 
             //Console.WriteLine("{0} {1}", byte.MinValue, byte.MaxValue);
             //Console.WriteLine(number);
@@ -26,44 +26,44 @@ namespace Variables
 
             //check type conversions
             //explicit conversion
-            int testingvalue = 260;
-            byte testingValueTwo = (byte) testingvalue;
+            //int testingvalue = 260;
+            //byte testingValueTwo = (byte) testingvalue;
             //Console.WriteLine("this is the value in int type :  {0}", testingvalue);
             //Console.WriteLine("this is the value in byte type :  {0}", testingValueTwo);
 
             //implicit conversion
-            int testingValueThree = 260;
-            float testingValueFour = testingValueThree;
+            //int testingValueThree = 260;
+            //float testingValueFour = testingValueThree;
             //Console.WriteLine("this is the value in int type :  {0}", testingValueThree);
             //Console.WriteLine("this is the value in float type :  {0}", testingValueFour);
 
             //non-compatible conversion
-            string testingValueFive = "12";
-            float testingValueSix = Convert.ToInt16(testingValueFive);
-            float testingValueSeven = int.Parse(testingValueFive);
+            //string testingValueFive = "12";
+            //float testingValueSix = Convert.ToInt16(testingValueFive);
+            //float testingValueSeven = int.Parse(testingValueFive);
             //Console.WriteLine("this is the value in string type :  {0}", testingValueSix);
             //Console.WriteLine("this is the value in int type with convert function :  {0}", testingValueSix);
             //Console.WriteLine("this is the value in int type with parse function :  {0}", testingValueSeven);
 
 
             //using try and catch
-            try
-            {
-                var stingValueEight = "1234";
-                byte b = Convert.ToByte(stingValueEight);
-                //Console.WriteLine(b);
+            //try
+            //{
+            //    var stingValueEight = "1234";
+            //    byte b = Convert.ToByte(stingValueEight);
+            //    //Console.WriteLine(b);
 
-            }
-            catch (Exception)
-            {
-                //Console.WriteLine("there is a type conversion issue with the values !!!");
-            }
+            //}
+            //catch (Exception)
+            //{
+            //    //Console.WriteLine("there is a type conversion issue with the values !!!");
+            //}
 
 
             //operators
             //arithmetic operators
-            var testingValueNine = 12;
-            var testingValueTen = 23;
+            //var testingValueNine = 12;
+            //var testingValueTen = 23;
 
             //Console.WriteLine((float)testingValueNine + (float)testingValueTen);
             //Console.WriteLine(testingValueTen > testingValueNine);
@@ -73,53 +73,53 @@ namespace Variables
 
 
             //Checking non-primitve types in the C#
-            Person person = new Person();
-            person.FirstName = "Heshan";
-            person.Secondname = "Kavinda";
-            person.age = 23;
-            person.address = "Meegoda";
-            var fullName = person.Introduce();
+            //Person person = new Person();
+            //person.FirstName = "Heshan";
+            //person.Secondname = "Kavinda";
+            //person.age = 23;
+            //person.address = "Meegoda";
+            //var fullName = person.Introduce();
             //Console.WriteLine("this is the full name : " + fullName);
 
             //testing a class which is located in a different field
-            Calculator calculator = new Calculator();
+            //Calculator calculator = new Calculator();
             //Console.WriteLine("This is the resulf from the cal : " + calculator.AddNumbers(12, 23));
 
 
 
             //testing array
-            var numberArray = new int[3];
-            numberArray[0] = 1;
+            //var numberArray = new int[3];
+            //numberArray[0] = 1;
 
             //Console.WriteLine(numberArray[0]);
             //Console.WriteLine(numberArray[1]);
             //Console.WriteLine(numberArray[2]);
 
-            var booleanArray = new bool[3];
-            booleanArray[0] = true;
+            //var booleanArray = new bool[3];
+            //booleanArray[0] = true;
 
             //Console.WriteLine(booleanArray[0]);
             //Console.WriteLine(booleanArray[1]);
             //Console.WriteLine(booleanArray[2]);
 
-            var stringArray = new string[3] { "hens", "kavi", "nimal" };
+            //var stringArray = new string[3] { "hens", "kavi", "nimal" };
 
             //Console.WriteLine(stringArray.Length);
 
 
 
             //strings and related things
-            var nameOne = "Heshan";
-            var nameTwo = "Kavinda";
-            var names = new string[2] { "Heshan", "Kavinda" };
+            //            var nameOne = "Heshan";
+            //            var nameTwo = "Kavinda";
+            //            var names = new string[2] { "Heshan", "Kavinda" };
 
-            var contatinatedStringOne = nameOne + " " + nameTwo;                                            //usual contatination
-            var contatinatedStringTwo = string.Format("{0} {1}", nameOne, nameTwo);                         //using format in string class for contatination
-            var contatinatedStringThree = string.Join(" ", names);                                          //using join in string class for contatination with a sparator
-            var textString = "hi John\nLook into the following path \nc:\\folder\\folders\\hello";          //usual string
-            var textStringTwo = @"hi John
-Look into the following path
-c:\folder\folders\hello";                                                                                   //verbatim string
+            //            var contatinatedStringOne = nameOne + " " + nameTwo;                                            //usual contatination
+            //            var contatinatedStringTwo = string.Format("{0} {1}", nameOne, nameTwo);                         //using format in string class for contatination
+            //            var contatinatedStringThree = string.Join(" ", names);                                          //using join in string class for contatination with a sparator
+            //            var textString = "hi John\nLook into the following path \nc:\\folder\\folders\\hello";          //usual string
+            //            var textStringTwo = @"hi John
+            //Look into the following path
+            //c:\folder\folders\hello";                                                                                   //verbatim string
 
 
             //Console.WriteLine("This is the contatinated string one : " + contatinatedStringOne);
@@ -135,9 +135,9 @@ c:\folder\folders\hello";                                                       
 
 
             //Enum related things
-            var method = TestingEnum.Express;
-            var methodValue = 3;
-            var methodKey = "Express";
+            //var method = TestingEnum.Express;
+            //var methodValue = 3;
+            //var methodKey = "Express";
             //Console.WriteLine("printing the express value as a int value : " + (int)method);
             //Console.WriteLine("printing the express value as a string value : " + method.ToString());
             //Console.WriteLine("printing the express key when we have the value : " + (TestingEnum)methodValue);
@@ -146,15 +146,51 @@ c:\folder\folders\hello";                                                       
 
 
             //types
-            var numberOne = 12;
-            var numberTwo = numberOne;
-            numberTwo++;
-            Console.WriteLine("This is the number one : {0} and this is number two : {1}", numberOne, numberTwo);           //value type
+            //var numberOne = 12;
+            //var numberTwo = numberOne;
+            //numberTwo++;
+            //Console.WriteLine("This is the number one : {0} and this is number two : {1}", numberOne, numberTwo);           //value type
 
-            var arrayOne = new int[3]{ 1, 2, 3};
-            var arrayTwo = arrayOne;
-            arrayTwo[0] = 55;
-            Console.WriteLine("This is the number one : {0} and this is number two : {1}", arrayOne[0], arrayTwo[0]);       //reference type
+            //var arrayOne = new int[3]{ 1, 2, 3};
+            //var arrayTwo = arrayOne;
+            //arrayTwo[0] = 55;
+            //Console.WriteLine("This is the number one : {0} and this is number two : {1}", arrayOne[0], arrayTwo[0]);       //reference type
+
+
+            //conditional statements
+            //if statments
+            int age = 12;
+            int level = 2;
+
+            if(age < 10)
+            {
+                Console.WriteLine("You cannot access the page;");
+            }else if(age >= 10 && age <= 20)
+            {
+                Console.WriteLine("you can access the web with limited access");
+            }
+            else
+            {
+                Console.WriteLine("you can access the web with unlimited access");
+            }
+
+
+            //switch statements
+            switch (level)
+            {
+                case 1:
+                case 2:
+                    Console.WriteLine("you have access only for the first two levels in the building");
+                    break;
+
+                case 3:
+                    Console.WriteLine("you have access only for the level three");
+                    break;
+
+                default:
+                    Console.WriteLine("you do not have any access to any of levels");
+                    break;
+            }
         }
     }
 }
