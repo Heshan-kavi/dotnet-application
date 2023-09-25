@@ -19,7 +19,7 @@
             PersonalDetails personalDetails = new PersonalDetails();
             personalDetails.age = age;
             personalDetails.address = address;
-            Console.WriteLine("Hello there, my name is : " + FirstName + " " + Secondname + " and this is my age : "+ personalDetails.age + " and the address : " + personalDetails.address);
+            //Console.WriteLine("Hello there, my name is : " + FirstName + " " + Secondname + " and this is my age : "+ personalDetails.age + " and the address : " + personalDetails.address);
             return FirstName + " " + Secondname;
         }
     }
