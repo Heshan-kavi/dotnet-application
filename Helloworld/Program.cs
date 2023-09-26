@@ -206,7 +206,21 @@ namespace Variables
             }
 
             //foreach loop
+            Console.WriteLine("this is the foreach loop result: ");
+            foreach(int number in numbers)
+            {
+                Console.WriteLine(number);
+            }
+
             //while loop
+            Console.WriteLine("this is the while loop result: ");
+            int j = 0;
+            while(j < numbers.Length)
+            {
+                Console.WriteLine(numbers[j]);
+                j++;
+            }
+
             //do-while loop
         }
     }
