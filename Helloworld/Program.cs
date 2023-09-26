@@ -222,6 +222,14 @@ namespace Variables
             }
 
             //do-while loop
+            Console.WriteLine("this is the do-while loop result: ");
+            int l = 0;
+            do
+            {
+                Console.WriteLine(l);
+                l++;
+            }
+            while (l < numbers.Length);
         }
     }
 }
