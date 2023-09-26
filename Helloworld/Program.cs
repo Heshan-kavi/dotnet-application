@@ -159,38 +159,55 @@ namespace Variables
 
             //conditional statements
             //if statments
-            int age = 12;
-            int level = 2;
+            //int age = 12;
+            //int level = 2;
 
-            if(age < 10)
+            //if(age < 10)
+            //{
+            //    Console.WriteLine("You cannot access the page;");
+            //}else if(age >= 10 && age <= 20)
+            //{
+            //    Console.WriteLine("you can access the web with limited access");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("you can access the web with unlimited access");
+            //}
+
+
+            ////switch statements
+            //switch (level)
+            //{
+            //    case 1:
+            //    case 2:
+            //        Console.WriteLine("you have access only for the first two levels in the building");
+            //        break;
+
+            //    case 3:
+            //        Console.WriteLine("you have access only for the level three");
+            //        break;
+
+            //    default:
+            //        Console.WriteLine("you do not have any access to any of levels");
+            //        break;
+            //}
+
+
+
+
+            //iterational statments
+            int[] numbers = new int[] { 1, 2, 3 };
+
+            //for loop
+            Console.WriteLine("this is the for loop result: ");
+            for (int i = 0; i < numbers.Length; i++)
             {
-                Console.WriteLine("You cannot access the page;");
-            }else if(age >= 10 && age <= 20)
-            {
-                Console.WriteLine("you can access the web with limited access");
+                Console.WriteLine(numbers[i]);
             }
-            else
-            {
-                Console.WriteLine("you can access the web with unlimited access");
-            }
 
-
-            //switch statements
-            switch (level)
-            {
-                case 1:
-                case 2:
-                    Console.WriteLine("you have access only for the first two levels in the building");
-                    break;
-
-                case 3:
-                    Console.WriteLine("you have access only for the level three");
-                    break;
-
-                default:
-                    Console.WriteLine("you do not have any access to any of levels");
-                    break;
-            }
+            //foreach loop
+            //while loop
+            //do-while loop
         }
     }
 }
