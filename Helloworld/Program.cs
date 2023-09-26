@@ -244,15 +244,30 @@ namespace Variables
 
 
             //random class
-            Random random = new Random();
-            int passwordLength = 10;
-            char[] buffer = new char[passwordLength];
-            for(int i = 0; i < passwordLength; i++)
+            //Random random = new Random();
+            //int passwordLength = 10;
+            //char[] buffer = new char[passwordLength];
+            //for(int i = 0; i < passwordLength; i++)
+            //{
+            //    buffer[i] = (char)('a' + random.Next(1, 26));
+            //}
+            //var password = new string(buffer);                      //in here we create a new string using an array of characters
+            //Console.WriteLine(password);
+
+
+
+
+            //arrays and lists
+            var numbers = new[] {12, 32, 4, 34, 12};
+
+            Console.WriteLine("this is the length of the array : "+ numbers.Length);
+            Console.WriteLine("this is the index of the 4 in the array : {0}", Array.IndexOf(numbers, 4));
+            Array.Clear(numbers, 1, 2);
+            Console.WriteLine("this is the array after clearing 32 and 4 : ");
+            foreach(var number in numbers)
             {
-                buffer[i] = (char)('a' + random.Next(1, 26));
+                Console.WriteLine(number);
             }
-            var password = new string(buffer);                      //in here we create a new string using an array of characters
-            Console.WriteLine(password); 
         }
     }
 }
