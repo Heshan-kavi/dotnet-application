@@ -197,39 +197,48 @@ namespace Variables
 
             //iterational statments
             int[] numbers = new int[] { 1, 2, 3 };
+            string name = "Heshan Kavinda";
 
             //for loop
             Console.WriteLine("this is the for loop result: ");
-            for (int i = 0; i < numbers.Length; i++)
-            {
-                Console.WriteLine(numbers[i]);
-            }
+            //for (int i = 0; i < numbers.Length; i++)
+            //{
+            //    Console.WriteLine(numbers[i]);
+            //}
 
             //foreach loop
-            Console.WriteLine("this is the foreach loop result: ");
-            foreach(int number in numbers)
+            //Console.WriteLine("this is the foreach loop result: ");
+            //foreach(int number in numbers)
+            //{
+            //    Console.WriteLine(number);
+            //}
+            foreach(var character in name)
             {
-                Console.WriteLine(number);
+                if(character == ' ')
+                {
+                    continue;
+                }
+                Console.WriteLine(character);
             }
 
             //while loop
-            Console.WriteLine("this is the while loop result: ");
-            int j = 0;
-            while(j < numbers.Length)
-            {
-                Console.WriteLine(numbers[j]);
-                j++;
-            }
+            //Console.WriteLine("this is the while loop result: ");
+            //int j = 0;
+            //while(j < numbers.Length)
+            //{
+            //    Console.WriteLine(numbers[j]);
+            //    j++;
+            //}
 
             //do-while loop
-            Console.WriteLine("this is the do-while loop result: ");
-            int l = 0;
-            do
-            {
-                Console.WriteLine(l);
-                l++;
-            }
-            while (l < numbers.Length);
+            //Console.WriteLine("this is the do-while loop result: ");
+            //int l = 0;
+            //do
+            //{
+            //    Console.WriteLine(l);
+            //    l++;
+            //}
+            //while (l < numbers.Length);
         }
     }
 }
