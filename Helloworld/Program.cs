@@ -196,11 +196,11 @@ namespace Variables
 
 
             //iterational statments
-            int[] numbers = new int[] { 1, 2, 3 };
-            string name = "Heshan Kavinda";
+            //int[] numbers = new int[] { 1, 2, 3 };
+            //string name = "Heshan Kavinda";
 
             //for loop
-            Console.WriteLine("this is the for loop result: ");
+            //Console.WriteLine("this is the for loop result: ");
             //for (int i = 0; i < numbers.Length; i++)
             //{
             //    Console.WriteLine(numbers[i]);
@@ -212,14 +212,14 @@ namespace Variables
             //{
             //    Console.WriteLine(number);
             //}
-            foreach(var character in name)
-            {
-                if(character == ' ')
-                {
-                    continue;
-                }
-                Console.WriteLine(character);
-            }
+            //foreach(var character in name)
+            //{
+            //    if(character == ' ')
+            //    {
+            //        continue;
+            //    }
+            //    Console.WriteLine(character);
+            //}
 
             //while loop
             //Console.WriteLine("this is the while loop result: ");
@@ -239,6 +239,20 @@ namespace Variables
             //    l++;
             //}
             //while (l < numbers.Length);
+
+
+
+
+            //random class
+            Random random = new Random();
+            int passwordLength = 10;
+            char[] buffer = new char[passwordLength];
+            for(int i = 0; i < passwordLength; i++)
+            {
+                buffer[i] = (char)('a' + random.Next(1, 26));
+            }
+            var password = new string(buffer);                      //in here we create a new string using an array of characters
+            Console.WriteLine(password); 
         }
     }
 }
