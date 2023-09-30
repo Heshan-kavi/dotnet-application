@@ -355,6 +355,14 @@ namespace Variables
             Console.WriteLine("Trimmed string : '{0}' " , name.Trim());                                 //trim the string
             Console.WriteLine("Uppercased string : '{0}' ", name.Trim().ToUpper());                     //to convert the string to uppercase string
             Console.WriteLine("Lowercased string : '{0}' ", name.Trim().ToLower());                     //to convert the string to lowervase string
+
+            var index = name.IndexOf('s');
+            var firstName = name.Trim().Substring(0, 6);
+            var lastName = name.Trim().Substring(7);
+
+            Console.WriteLine("the index of letter 's' in the string is : '{0}'", index);               //to get the index of a character in the string
+            Console.WriteLine("the first name is : '{0}' ", firstName);                                 //to get a substring using the index and the length
+            Console.WriteLine("the last name is : '{0}' ", lastName);                                   //to get a substring using only the index
         }
     }
 }
