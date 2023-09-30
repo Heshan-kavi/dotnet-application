@@ -368,6 +368,9 @@ namespace Variables
             Console.WriteLine("the first name is : '{0}' ", names[0]);                                  //to get a substring using the split
             Console.WriteLine("the last name is : '{0}' ", names[1]);                                   //to get a substring using the split
 
+            Console.WriteLine("Replaced s with $ in the string : '{0}'", name.Replace('s', '$'));               //replace characters in the string
+            Console.WriteLine("Replaced esh with ESH in the string : '{0}'", name.Replace("esh", "ESH"));       //replace strings in the string
+
         }
     }
 }
