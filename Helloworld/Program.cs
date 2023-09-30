@@ -302,7 +302,7 @@ namespace Variables
             //Console.WriteLine("This is the lenght of the list : " + numberList.Count);                                      //to get the length of the list
             //Console.WriteLine("This is the index of the 1 from the begining from the list : " + numberList.IndexOf(1));     //to get the index of a value in the list from the begining
             //Console.WriteLine("This is the index of the 1 from the end from the list : " + numberList.LastIndexOf(1));      //to get the index of a value in the list from the end
-            
+
             //for(int i = 0; i < numberList.Count; i++)
             //{
             //    numberList.Remove(1);                                                                                       //to remove all the 1 values. in here cannot use foreach because it generates an error
@@ -317,6 +317,23 @@ namespace Variables
             //numberList.Clear();                                                                                             //to clear the whole list
             //Console.WriteLine("this is the count of the list after clearing : ");
             //Console.WriteLine(numberList.Count);
+
+
+
+            //date time
+            var dateTime = new DateTime(2015,01,01);                                                                        //to access the datatime class
+            var now = DateTime.Now;
+            var tomorrow = now.AddDays(1);                                                                                  //to get tomorrow date
+            var yesterday = now.AddDays(-1);                                                                                //to get yesterday date
+
+            Console.WriteLine("This is today : " + now);                                    
+            Console.WriteLine("This is yesterday : " + yesterday);
+            Console.WriteLine("This is tomorrow : " + tomorrow);
+            Console.WriteLine("This is the today time in short format : " + now.ToShortTimeString());                       //to get the today time in short format
+            Console.WriteLine("This is the today time in long format : " + now.ToLongTimeString());                         //to get the today time in long format
+            Console.WriteLine("This is the today date in short format : " + now.ToShortDateString());                       //to get the today date in short format
+            Console.WriteLine("This is the today date in long format : " + now.ToLongDateString());                         //to get the today date in long format
+            Console.WriteLine("This is the today date in diff format : " + now.ToString("yyyy-MM-dd"));                     //to get the today date in diff format
         }
     }
 }
