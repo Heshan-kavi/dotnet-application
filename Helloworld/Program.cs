@@ -197,70 +197,16 @@ namespace Variables
 
 
             //iterational statments
-            //int[] numbers = new int[] { 1, 2, 3 };
-            //string name = "Heshan Kavinda";
+            //Helloworld.IterationalStatements.ForLoopRelatedFunctionalities();
+            //Helloworld.IterationalStatements.ForEachRelatedFunctionalities();
+            //Helloworld.IterationalStatements.DoWhileLoopRelatedFunctionalities();
+            //Helloworld.IterationalStatements.WhileLooppRelatedFunctionalities();
 
-            //for loop
-            //Console.WriteLine("this is the for loop result: ");
-            //for (int i = 0; i < numbers.Length; i++)
-            //{
-            //    Console.WriteLine(numbers[i]);
-            //}
+            //random class related functionalities
+            //Helloworld.RandomClass.RandomRelatedFunctionalities();
 
-            //foreach loop
-            //Console.WriteLine("this is the foreach loop result: ");
-            //foreach(int number in numbers)
-            //{
-            //    Console.WriteLine(number);
-            //}
-            //foreach(var character in name)
-            //{
-            //    if(character == ' ')
-            //    {
-            //        continue;
-            //    }
-            //    Console.WriteLine(character);
-            //}
-
-            //while loop
-            //Console.WriteLine("this is the while loop result: ");
-            //int j = 0;
-            //while(j < numbers.Length)
-            //{
-            //    Console.WriteLine(numbers[j]);
-            //    j++;
-            //}
-
-            //do-while loop
-            //Console.WriteLine("this is the do-while loop result: ");
-            //int l = 0;
-            //do
-            //{
-            //    Console.WriteLine(l);
-            //    l++;
-            //}
-            //while (l < numbers.Length);
-
-
-
-
-            //random class
-            //Random random = new Random();
-            //int passwordLength = 10;
-            //char[] buffer = new char[passwordLength];
-            //for(int i = 0; i < passwordLength; i++)
-            //{
-            //    buffer[i] = (char)('a' + random.Next(1, 26));
-            //}
-            //var password = new string(buffer);                      //in here we create a new string using an array of characters
-            //Console.WriteLine(password);
-
-
-
-
-            //arrays and lists
-            //arrays
-            Helloworld.ArrayClass.ArrayRelatedFunctionalities();
+            //arrays related functionalities
+            //Helloworld.ArrayClass.ArrayRelatedFunctionalities();
 
             //lists related functionalities
             //Helloworld.ListsClass.ListsRelatedFunctionalities();
