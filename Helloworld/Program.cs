@@ -379,9 +379,16 @@ namespace Variables
             var sentence = "This text is going going to be really really really really really really long for the testing purposes!";
             var maxLength = 20;
 
-            if(sentence.Length < maxLength)
+            var returnedSummarizedString = SummerizingText(sentence, maxLength);
+            Console.WriteLine("this is the summerized string : ");
+            Console.WriteLine(returnedSummarizedString);
+        }
+
+        static string SummerizingText(string sentence, int maxLength)
+        {
+            if (sentence.Length < maxLength)
             {
-                Console.WriteLine(sentence);
+                return sentence;
             }
             else
             {
@@ -389,19 +396,17 @@ namespace Variables
                 var totalCharacters = 0;
                 var summaryTextList = new List<string>();
 
-                foreach(var word in words)
+                foreach (var word in words)
                 {
                     totalCharacters += word.Length + 1;
                     summaryTextList.Add(word);
-                    if(totalCharacters > maxLength)
+                    if (totalCharacters > maxLength)
                     {
                         break;
                     }
                 }
 
-                var summarizedText = string.Join(' ', summaryTextList);
-
-                Console.WriteLine(summarizedText + " ...");
+                return string.Join(' ', summaryTextList) + " ...";
             }
         }
     }
