@@ -377,35 +377,11 @@ namespace Variables
 
 
             var sentence = "This text is going going to be really really really really really really long for the testing purposes!";
-            var maxLength = 20;
+            var maxLength = 32;
 
-            var returnedSummarizedString = SummerizingText(sentence, maxLength);
+            var returnedSummarizedString = Helloworld.StringUtilization.SummerizingText(sentence, maxLength);
             Console.WriteLine("this is the summerized string : ");
             Console.WriteLine(returnedSummarizedString);
-        }
-
-        static string SummerizingText(string sentence, int maxLength = 20)
-        {
-            if (sentence.Length < maxLength)
-            {
-                return sentence;
-            }
-
-            var words = sentence.Split(' ');
-            var totalCharacters = 0;
-            var summaryTextList = new List<string>();
-
-            foreach (var word in words)
-            {
-                totalCharacters += word.Length + 1;
-                summaryTextList.Add(word);
-                if (totalCharacters > maxLength)
-                {
-                    break;
-                }
-            }
-
-            return string.Join(' ', summaryTextList) + " ...";
         }
     }
 }
