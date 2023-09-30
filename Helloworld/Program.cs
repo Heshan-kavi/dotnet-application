@@ -349,6 +349,12 @@ namespace Variables
 
 
             //strings
+            var name = "Heshan Kavinda ";
+
+            Console.WriteLine("Orginal string : '{0}'", name);
+            Console.WriteLine("Trimmed string : '{0}' " , name.Trim());                                 //trim the string
+            Console.WriteLine("Uppercased string : '{0}' ", name.Trim().ToUpper());                     //to convert the string to uppercase string
+            Console.WriteLine("Lowercased string : '{0}' ", name.Trim().ToLower());                     //to convert the string to lowervase string
         }
     }
 }
