@@ -147,241 +147,37 @@ namespace Variables
 
 
             //types
-            //var numberOne = 12;
-            //var numberTwo = numberOne;
-            //numberTwo++;
-            //Console.WriteLine("This is the number one : {0} and this is number two : {1}", numberOne, numberTwo);           //value type
-
-            //var arrayOne = new int[3]{ 1, 2, 3};
-            //var arrayTwo = arrayOne;
-            //arrayTwo[0] = 55;
-            //Console.WriteLine("This is the number one : {0} and this is number two : {1}", arrayOne[0], arrayTwo[0]);       //reference type
+            Helloworld.TypesClass.TypeRelatedFunctionalities();
 
 
             //conditional statements
-            //if statments
-            //int age = 12;
-            //int level = 2;
-
-            //if(age < 10)
-            //{
-            //    Console.WriteLine("You cannot access the page;");
-            //}else if(age >= 10 && age <= 20)
-            //{
-            //    Console.WriteLine("you can access the web with limited access");
-            //}
-            //else
-            //{
-            //    Console.WriteLine("you can access the web with unlimited access");
-            //}
-
-
-            ////switch statements
-            //switch (level)
-            //{
-            //    case 1:
-            //    case 2:
-            //        Console.WriteLine("you have access only for the first two levels in the building");
-            //        break;
-
-            //    case 3:
-            //        Console.WriteLine("you have access only for the level three");
-            //        break;
-
-            //    default:
-            //        Console.WriteLine("you do not have any access to any of levels");
-            //        break;
-            //}
-
-
-
+            //Helloworld.ConditionalStatements.IfRelatedFunctionalities();
+            //Helloworld.ConditionalStatements.SwitchRelatedFunctionalities();
 
             //iterational statments
-            //int[] numbers = new int[] { 1, 2, 3 };
-            //string name = "Heshan Kavinda";
+            //Helloworld.IterationalStatements.ForLoopRelatedFunctionalities();
+            //Helloworld.IterationalStatements.ForEachRelatedFunctionalities();
+            //Helloworld.IterationalStatements.DoWhileLoopRelatedFunctionalities();
+            //Helloworld.IterationalStatements.WhileLooppRelatedFunctionalities();
 
-            //for loop
-            //Console.WriteLine("this is the for loop result: ");
-            //for (int i = 0; i < numbers.Length; i++)
-            //{
-            //    Console.WriteLine(numbers[i]);
-            //}
+            //random class related functionalities
+            //Helloworld.RandomClass.RandomRelatedFunctionalities();
 
-            //foreach loop
-            //Console.WriteLine("this is the foreach loop result: ");
-            //foreach(int number in numbers)
-            //{
-            //    Console.WriteLine(number);
-            //}
-            //foreach(var character in name)
-            //{
-            //    if(character == ' ')
-            //    {
-            //        continue;
-            //    }
-            //    Console.WriteLine(character);
-            //}
+            //arrays related functionalities
+            //Helloworld.ArrayClass.ArrayRelatedFunctionalities();
 
-            //while loop
-            //Console.WriteLine("this is the while loop result: ");
-            //int j = 0;
-            //while(j < numbers.Length)
-            //{
-            //    Console.WriteLine(numbers[j]);
-            //    j++;
-            //}
+            //lists related functionalities
+            //Helloworld.ListsClass.ListsRelatedFunctionalities();
 
-            //do-while loop
-            //Console.WriteLine("this is the do-while loop result: ");
-            //int l = 0;
-            //do
-            //{
-            //    Console.WriteLine(l);
-            //    l++;
-            //}
-            //while (l < numbers.Length);
+            //date time related functionalities
+            //Helloworld.DateTimeClass.DateTimeRelatedFunctionalities();
 
+            //timestamp related functionalities
+            //Helloworld.TimeSpanClass.TimeSpanRelatedFunctionalities();
 
-
-
-            //random class
-            //Random random = new Random();
-            //int passwordLength = 10;
-            //char[] buffer = new char[passwordLength];
-            //for(int i = 0; i < passwordLength; i++)
-            //{
-            //    buffer[i] = (char)('a' + random.Next(1, 26));
-            //}
-            //var password = new string(buffer);                      //in here we create a new string using an array of characters
-            //Console.WriteLine(password);
-
-
-
-
-            //arrays and lists
-            //arrays
-            //var numbers = new[] {12, 32, 4, 34, 12};
-
-            //Console.WriteLine("this is the length of the array : "+ numbers.Length);                            //to get the length of the array
-            //Console.WriteLine("this is the index of the 4 in the array : {0}", Array.IndexOf(numbers, 4));      //to get the index of an element in the array
-            //Array.Clear(numbers, 1, 2);                                                                         //to clear some elements in the array
-            //Console.WriteLine("this is the array after clearing 32 and 4 : ");
-            //foreach(var number in numbers)
-            //{
-            //    Console.WriteLine(number);
-            //}
-
-            //var secondNumbers = new int[4];
-            //Array.Copy(numbers, secondNumbers, 4);
-            //Console.WriteLine("this is the copied array : " );                                                  //to copy some elements from the begining to another array
-            //foreach (var number in secondNumbers)
-            //{
-            //    Console.WriteLine(number);
-            //}
-            //Array.Sort(secondNumbers);                                                                          //to sort an array
-            //Console.WriteLine("this is the sorted copied array : ");
-            //foreach (var number in secondNumbers)
-            //{
-            //    Console.WriteLine(number);
-            //}
-            //Array.Reverse(secondNumbers);                                                                       //to reverse an array
-            //Console.WriteLine("this is the reversed array : ");
-            //foreach (var number in secondNumbers)
-            //{
-            //    Console.WriteLine(number);
-            //}
-
-            //lists
-            //var numberList = new List<int>() { 1, 2, 8 };                                                                   //to initialize the list
-            //numberList.Add(1);                                                                                              //add a single value to the list
-            //numberList.AddRange(new int[] { 5, 6, 7 });                                                                     //add range of values to the list
-            //foreach (var number in numberList)
-            //{
-            //    Console.WriteLine(number);
-            //}
-            //Console.WriteLine("This is the lenght of the list : " + numberList.Count);                                      //to get the length of the list
-            //Console.WriteLine("This is the index of the 1 from the begining from the list : " + numberList.IndexOf(1));     //to get the index of a value in the list from the begining
-            //Console.WriteLine("This is the index of the 1 from the end from the list : " + numberList.LastIndexOf(1));      //to get the index of a value in the list from the end
-
-            //for(int i = 0; i < numberList.Count; i++)
-            //{
-            //    numberList.Remove(1);                                                                                       //to remove all the 1 values. in here cannot use foreach because it generates an error
-            //}
-            //Console.WriteLine("this is the count of the list after removing the 1 values : ");
-            //Console.WriteLine(numberList.Count);
-            //Console.WriteLine("this is the list after removing the 1 values : ");
-            //foreach (var number in numberList)
-            //{
-            //    Console.WriteLine(number);
-            //}
-            //numberList.Clear();                                                                                             //to clear the whole list
-            //Console.WriteLine("this is the count of the list after clearing : ");
-            //Console.WriteLine(numberList.Count);
-
-
-
-            //date time
-            //var dateTime = new DateTime(2015,01,01);                                                                        //to access the datatime class
-            //var now = DateTime.Now;
-            //var tomorrow = now.AddDays(1);                                                                                  //to get tomorrow date
-            //var yesterday = now.AddDays(-1);                                                                                //to get yesterday date
-
-            //Console.WriteLine("This is today : " + now);                                    
-            //Console.WriteLine("This is yesterday : " + yesterday);
-            //Console.WriteLine("This is tomorrow : " + tomorrow);
-            //Console.WriteLine("This is the today time in short format : " + now.ToShortTimeString());                       //to get the today time in short format
-            //Console.WriteLine("This is the today time in long format : " + now.ToLongTimeString());                         //to get the today time in long format
-            //Console.WriteLine("This is the today date in short format : " + now.ToShortDateString());                       //to get the today date in short format
-            //Console.WriteLine("This is the today date in long format : " + now.ToLongDateString());                         //to get the today date in long format
-            //Console.WriteLine("This is the today date in diff format : " + now.ToString("yyyy-MM-dd"));                     //to get the today date in diff format
-
-
-            //timestamp
-            //var timespan = new TimeSpan(1, 2, 3);                                                                           //create a timespan with 1hour 2mins and 3secs.
-            //var timespan1 = new TimeSpan(1, 0, 0);                                                                          //create a timespan with one hour
-            //var timespan2 = TimeSpan.FromHours(1);                                                                          //create a timespan with one hour
-
-            //Console.WriteLine("this is the created timespan : " + timespan);
-            //Console.WriteLine("this is the minutes of the the created timespan : " + timespan.Minutes);                                 //to get the only minutes in the timespan
-            //Console.WriteLine("this is the total minutes of the created timespan : " + timespan.TotalMinutes);                          //to get the timespan with minutes
-            //Console.WriteLine("this is the timespan after adding a day of timespan : " + timespan.Add(TimeSpan.FromDays(1)));           //to add days to the timestamp
-            //Console.WriteLine("this is the timespan after subtracting one hour to it : " + timespan.Subtract(TimeSpan.FromHours(1)));   //to substract hours from the timestamp
-
-
-            //strings
-            //var name = "Heshan Kavinda ";
-
-            //Console.WriteLine("Orginal string : '{0}'", name);
-            //Console.WriteLine("Trimmed string : '{0}' " , name.Trim());                                 //trim the string
-            //Console.WriteLine("Uppercased string : '{0}' ", name.Trim().ToUpper());                     //to convert the string to uppercase string
-            //Console.WriteLine("Lowercased string : '{0}' ", name.Trim().ToLower());                     //to convert the string to lowervase string
-
-            //var index = name.IndexOf('s');
-            //var firstName = name.Trim().Substring(0, 6);
-            //var lastName = name.Trim().Substring(7);
-
-            //Console.WriteLine("the index of letter 's' in the string is : '{0}'", index);               //to get the index of a character in the string
-            //Console.WriteLine("the first name is : '{0}' ", firstName);                                 //to get a substring using the index and the length
-            //Console.WriteLine("the last name is : '{0}' ", lastName);                                   //to get a substring using only the index
-
-            //var names = name.Split(' ');                                                                //split the whole string with the character which we provided
-            //Console.WriteLine("the first name is : '{0}' ", names[0]);                                  //to get a substring using the split
-            //Console.WriteLine("the last name is : '{0}' ", names[1]);                                   //to get a substring using the split
-
-            //Console.WriteLine("Replaced s with $ in the string : '{0}'", name.Replace('s', '$'));               //replace characters in the string
-            //Console.WriteLine("Replaced esh with ESH in the string : '{0}'", name.Replace("esh", "ESH"));       //replace strings in the string
-
-            //var ageInString = "26";
-            //Console.WriteLine("This is the parsed age value by using parse : " + Byte.Parse(ageInString));          //converting string to byte using parse
-            //Console.WriteLine("This is the parsed age value by using convert : " + Convert.ToByte(ageInString));    //converting string to byte using convert
-
-
-            var sentence = "This text is going going to be really really really really really really long for the testing purposes!";
-            var maxLength = 32;
-
-            var returnedSummarizedString = Helloworld.StringUtilization.SummerizingText(sentence, maxLength);
-            Console.WriteLine("this is the summerized string : ");
-            Console.WriteLine(returnedSummarizedString);
+            //strings related functionalities
+            //Helloworld.Strings.FormatingFunctionalities();
+            //Helloworld.Strings.OtherFunctionalities();
         }
     }
 }
