@@ -320,37 +320,16 @@ namespace Variables
 
 
 
-            //date time
-            //var dateTime = new DateTime(2015,01,01);                                                                        //to access the datatime class
-            //var now = DateTime.Now;
-            //var tomorrow = now.AddDays(1);                                                                                  //to get tomorrow date
-            //var yesterday = now.AddDays(-1);                                                                                //to get yesterday date
+            //date time related functionalities
+            //Helloworld.DateTimeClass.DateTimeRelatedFunctionalities();
 
-            //Console.WriteLine("This is today : " + now);                                    
-            //Console.WriteLine("This is yesterday : " + yesterday);
-            //Console.WriteLine("This is tomorrow : " + tomorrow);
-            //Console.WriteLine("This is the today time in short format : " + now.ToShortTimeString());                       //to get the today time in short format
-            //Console.WriteLine("This is the today time in long format : " + now.ToLongTimeString());                         //to get the today time in long format
-            //Console.WriteLine("This is the today date in short format : " + now.ToShortDateString());                       //to get the today date in short format
-            //Console.WriteLine("This is the today date in long format : " + now.ToLongDateString());                         //to get the today date in long format
-            //Console.WriteLine("This is the today date in diff format : " + now.ToString("yyyy-MM-dd"));                     //to get the today date in diff format
-
-
-            //timestamp
-            //var timespan = new TimeSpan(1, 2, 3);                                                                           //create a timespan with 1hour 2mins and 3secs.
-            //var timespan1 = new TimeSpan(1, 0, 0);                                                                          //create a timespan with one hour
-            //var timespan2 = TimeSpan.FromHours(1);                                                                          //create a timespan with one hour
-
-            //Console.WriteLine("this is the created timespan : " + timespan);
-            //Console.WriteLine("this is the minutes of the the created timespan : " + timespan.Minutes);                                 //to get the only minutes in the timespan
-            //Console.WriteLine("this is the total minutes of the created timespan : " + timespan.TotalMinutes);                          //to get the timespan with minutes
-            //Console.WriteLine("this is the timespan after adding a day of timespan : " + timespan.Add(TimeSpan.FromDays(1)));           //to add days to the timestamp
-            //Console.WriteLine("this is the timespan after subtracting one hour to it : " + timespan.Subtract(TimeSpan.FromHours(1)));   //to substract hours from the timestamp
+            //timestamp related functionalities
+            //Helloworld.TimeSpanClass.TimeSpanRelatedFunctionalities();
 
 
             //strings related functionalities
-            Helloworld.Strings.FormatingFunctionalities();
-            Helloworld.Strings.OtherFunctionalities();
+            //Helloworld.Strings.FormatingFunctionalities();
+            //Helloworld.Strings.OtherFunctionalities();
         }
     }
 }
