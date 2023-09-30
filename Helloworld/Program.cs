@@ -371,6 +371,10 @@ namespace Variables
             Console.WriteLine("Replaced s with $ in the string : '{0}'", name.Replace('s', '$'));               //replace characters in the string
             Console.WriteLine("Replaced esh with ESH in the string : '{0}'", name.Replace("esh", "ESH"));       //replace strings in the string
 
+            var ageInString = "26";
+            Console.WriteLine("This is the parsed age value by using parse : " + Byte.Parse(ageInString));          //converting string to byte using parse
+            Console.WriteLine("This is the parsed age value by using convert : " + Convert.ToByte(ageInString));    //converting string to byte using convert
+
         }
     }
 }
