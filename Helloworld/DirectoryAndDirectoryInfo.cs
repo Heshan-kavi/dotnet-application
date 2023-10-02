@@ -4,29 +4,29 @@ namespace Helloworld
 	public class DirectoryAndDirectoryInfo
 	{
         const string path = @"/Users/heshankavinda/Git Repos/dotnet Repos/testing_image.png";
-        const string pathTwo = @"/Users/heshankavinda/Git Repos/dotnet Repos";
 
 
         public static void DirectoryRelatedFunctionalities()                         //in here we are using some of the static functionalites 
         {
-            File.Copy(path, pathTwo, true);
-            File.Delete(path);
-            if (File.Exists(path))
+            Directory.CreateDirectory(path);
+            var files = Directory.GetFiles(path, "*.*", SearchOption.AllDirectories);
+            foreach(var file in files) {
+                Console.WriteLine(file);
+            }
+            var directories = Directory.GetDirectories(path, "*.*", SearchOption.AllDirectories);
+            foreach(var directory in directories)
             {
-                Console.WriteLine("the file exists");
+                Console.WriteLine(directory);
             }
         }
 
         public static void DirectoryInfoRelatedFunctionalities()                     //in here we are using the instance functionalities
         {
-            var fileInfo = new FileInfo(path);
-            fileInfo.CopyTo(pathTwo);
-            fileInfo.Delete();
-            if (fileInfo.Exists)
-            {
-                Console.WriteLine("the file exists");
-            }
+           //same as the Directory class functions only difference is return a instatnce functions
         }
+
+        //notes
+        //the difference between the directory and the directoryinfo is same as the file and fileinfo
     }
 }
 
