@@ -5,7 +5,7 @@ namespace Helloworld
 	{
 		public static void pathRelatedFunctionalities()
 		{
-            const string path = @"/Users/heshankavinda/Git Repos/dotnet Repos/testing_image.png";
+            const string path = @"/Users/heshankavinda/Git Repos/dotnet Repos/testing_image.png";                           //this is the testing path
 
             Console.WriteLine("Extension of the file : " + Path.GetExtension(path));
             Console.WriteLine("File name of the file : " + Path.GetFileName(path));
