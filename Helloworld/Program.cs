@@ -74,6 +74,9 @@ namespace Variables
             //strings related functionalities
             //Helloworld.Strings.FormatingFunctionalities();
             //Helloworld.Strings.OtherFunctionalities();
+
+            //string builder
+            Helloworld.Strings.StringBuilderRelatedFunctionalities();
         }
     }
 }

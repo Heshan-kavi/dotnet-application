@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Xml.Linq;
+using System.Text;
 
 namespace Helloworld
 {
@@ -69,6 +70,37 @@ c:\folder\folders\hello";                                                       
             Console.WriteLine(textString);
             Console.WriteLine("This is the verbitam string without different string escape operators :");
             Console.WriteLine(textStringTwo);
+
+        }
+
+        public static void StringBuilderRelatedFunctionalities()
+        {
+            //comparison between strings and stringbuilder
+            //when we modified a string it returns a new string everytime so it effects the performance but in string builders it returns the same string builder
+            //but in string we can use some functions like index of, length and we cannot use these functionalities in stringbuilders
+
+            var builder = new StringBuilder();
+
+            builder.Append('-', 10);                            // to append ten - to the builder
+            builder.AppendLine();                               //to append a newlint to the builder
+            builder.Append("Hello Heshan");
+            builder.AppendLine();
+            builder.Append("----------");
+
+            Console.WriteLine("This is the orginal string builder ; ");
+            Console.WriteLine(builder);
+
+            builder.Replace('-', '=');                          //to replace the - sign with a = equal sign
+            Console.WriteLine("This is the string builder after replacing ; ");
+            Console.WriteLine(builder);
+
+            builder.Remove(0,12);                               //to remove characters from a starting index to end index
+            Console.WriteLine("This is the string builder after removing ; ");
+            Console.WriteLine(builder);
+
+            builder.Insert(2, "world");                         //to insert a new string to a place with the mentioned starting index
+            Console.WriteLine("This is the string builder inserting ; ");
+            Console.WriteLine(builder);
 
         }
     }
