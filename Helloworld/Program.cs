@@ -76,7 +76,11 @@ namespace Variables
             //Helloworld.Strings.OtherFunctionalities();
 
             //string builder
-            Helloworld.Strings.StringBuilderRelatedFunctionalities();
+            //Helloworld.Strings.StringBuilderRelatedFunctionalities();
+
+            //file and fileinfo related things
+            //Helloworld.FileAndFileInfo.FileRelatedFunctionalities();
+            //Helloworld.FileAndFileInfo.FileInfoRelatedFunctionalities();
         }
     }
 }
