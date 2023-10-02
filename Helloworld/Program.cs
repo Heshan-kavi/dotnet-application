@@ -83,7 +83,8 @@ namespace Variables
             //Helloworld.FileAndFileInfo.FileInfoRelatedFunctionalities();
 
             //directory and directoryinfo related things
-
+            //Helloworld.FileAndFileInfo.DirectoryRelatedFunctionalities();
+            //Helloworld.FileAndFileInfo.DirectoryInfoRelatedFunctionalities();
         }
     }
 }
