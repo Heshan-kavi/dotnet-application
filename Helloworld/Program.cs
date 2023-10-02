@@ -84,6 +84,10 @@ namespace Variables
 
             //directory and directoryinfo related things
 
+
+            //path related things
+            Helloworld.PathClass.pathRelatedFunctionalities();
+
         }
     }
 }
